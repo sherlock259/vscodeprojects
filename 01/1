@@ -1,1 +1,8 @@
-print('ljq')
+import numpy as np
+# 打印Python解释器路径（验证是否为compphys环境）
+print("Python解释器路径：", __import__('sys').executable)  
+# 打印numpy版本（验证包存在性）
+print("Numpy版本：", np.__version__)  
+# 测试numpy功能（验证包可用性）
+x = np.pi / 4
+print("np.cos(np.pi/4) =", np.cos(x))
